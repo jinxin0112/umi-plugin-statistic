@@ -10,7 +10,7 @@
   "peerDependencies": {
     "umi": "2.x"
   },
-  
+  "main": "./index.js",
   "scripts": {
     "prepublishOnly": "np --no-cleanup --yolo --no-publish"
   },
