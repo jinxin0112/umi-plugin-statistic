@@ -10,20 +10,19 @@
   "peerDependencies": {
     "umi": "2.x"
   },
-  "main": "lib/index.js",
+  "main": "./lib/index.js",
   "scripts": {
-    "build": "umi-tools build",
+    "build": "father build",
     "pub": "npm run build && npm publish",
     "prepublishOnly": "npm run build && np --no-cleanup --yolo --no-publish"
   },
   "devDependencies": {
+    "father": "^2.20.0",
     "np": "^3.0.4",
-    "umi-tools": "*",
     "umi-types": "^0.4.1"
   },
   "files": [
-    "lib",
-    "src"
+    "lib"
   ],
   "license": "MIT"
 }
