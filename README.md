@@ -5,21 +5,25 @@
 
 Add statistical scripts to HTML templates
 
+## Features
+
+- ✔︎ 历史路由监听
+- ✔︎ 兼容多平台
+
 ## Usage
 
 Configure in `.umirc.js`,
 
 ```js
 export default {
-  plugins: [
-    ['umi-plugin-statistic', options],
-  ],
-}
+  plugins: [['umi-plugin-statistic', options]]
+};
 ```
 
 ## Options
 
-TODO
+- token: 各平台用于统计初始化的项目 token 或 id
+- platform: `BAIDU` | `GrowingIO` | `Google`
 
 ## LICENSE
 
