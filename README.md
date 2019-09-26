@@ -11,8 +11,10 @@ Configure in `.umirc.js`,
 
 ```js
 export default {
-  plugins: [['umi-plugin-statistic', options]]
-};
+  plugins: [
+    ['umi-plugin-statistic', options],
+  ],
+}
 ```
 
 ## Options

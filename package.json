@@ -1,24 +1,29 @@
 {
   "name": "umi-plugin-statistic",
-  "version": "0.0.2",
+  "version": "0.0.1",
   "description": "Add statistical scripts to HTML templates",
   "authors": {
-    "name": "jinxin",
+    "name": "jinxin0112",
     "email": ""
   },
-  "repository": "/umi-plugin-statistic",
+  "repository": "/statistic",
   "peerDependencies": {
     "umi": "2.x"
   },
-  "main": "./index.js",
+  "main": "lib/index.js",
   "scripts": {
-    "prepublishOnly": "np --no-cleanup --yolo --no-publish"
+    "build": "umi-tools build",
+    "pub": "npm run build && npm publish",
+    "prepublishOnly": "npm run build && np --no-cleanup --yolo --no-publish"
   },
   "devDependencies": {
-    "np": "^3.0.4"
+    "np": "^3.0.4",
+    "umi-tools": "*",
+    "umi-types": "^0.4.1"
   },
   "files": [
-    "index.js"
+    "lib",
+    "src"
   ],
   "license": "MIT"
 }
