@@ -12,7 +12,7 @@ export default function(token: string, api: IApi) {
   `;
   const footerContent: string = `
     window.g_history.listen(function(location, action){
-        process.env.NODE_ENV === 'production' && window._hmt.push(['_trackPageview', pathname]);
+        process.env.NODE_ENV === 'production' && window._hmt.push(['_trackPageview', location.pathname]);
     })
   `;
   return {
