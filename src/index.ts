@@ -32,5 +32,5 @@ export default function(api: IApi, options: IOpts) {
 
   if (subScript) subScript();
 
-  log.success('insert baidu statistic');
+  log.success('insert statistic script success!');
 }
