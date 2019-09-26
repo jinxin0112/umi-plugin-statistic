@@ -1,6 +1,6 @@
 {
   "name": "umi-plugin-statistic",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Add statistical scripts to HTML templates",
   "authors": {
     "name": "jinxin0112",
